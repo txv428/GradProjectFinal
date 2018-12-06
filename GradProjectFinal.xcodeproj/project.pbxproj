@@ -13,6 +13,7 @@
 		A56D218721B8A6E000B2FE53 /* GradProjectFinal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56D218521B8A6E000B2FE53 /* GradProjectFinal.xcdatamodeld */; };
 		A56D218921B8A6E300B2FE53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56D218821B8A6E300B2FE53 /* Assets.xcassets */; };
 		A56D218C21B8A6E300B2FE53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56D218A21B8A6E300B2FE53 /* LaunchScreen.storyboard */; };
+		A56D219421B8A73000B2FE53 /* ImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A56D218821B8A6E300B2FE53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56D218B21B8A6E300B2FE53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56D218D21B8A6E300B2FE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../../Downloads/ImageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A56D218221B8A6E000B2FE53 /* Main.storyboard */,
 				A56D218821B8A6E300B2FE53 /* Assets.xcassets */,
 				A56D218A21B8A6E300B2FE53 /* LaunchScreen.storyboard */,
+				A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */,
 				A56D218D21B8A6E300B2FE53 /* Info.plist */,
 				A56D218521B8A6E000B2FE53 /* GradProjectFinal.xcdatamodeld */,
 			);
@@ -141,6 +144,7 @@
 				A56D218121B8A6E000B2FE53 /* ViewController.swift in Sources */,
 				A56D217F21B8A6E000B2FE53 /* AppDelegate.swift in Sources */,
 				A56D218721B8A6E000B2FE53 /* GradProjectFinal.xcdatamodeld in Sources */,
+				A56D219421B8A73000B2FE53 /* ImageClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
