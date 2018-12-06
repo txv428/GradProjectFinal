@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A56D217B21B8A6E000B2FE53 /* GradProjectFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradProjectFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56D217B21B8A6E000B2FE53 /* Grad_Vangapalli_Tejasree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grad_Vangapalli_Tejasree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56D217E21B8A6E000B2FE53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A56D218021B8A6E000B2FE53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A56D218321B8A6E000B2FE53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		A56D217C21B8A6E000B2FE53 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A56D217B21B8A6E000B2FE53 /* GradProjectFinal.app */,
+				A56D217B21B8A6E000B2FE53 /* Grad_Vangapalli_Tejasree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A56D217A21B8A6E000B2FE53 /* GradProjectFinal */ = {
+		A56D217A21B8A6E000B2FE53 /* Grad_Vangapalli_Tejasree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A56D219021B8A6E300B2FE53 /* Build configuration list for PBXNativeTarget "GradProjectFinal" */;
+			buildConfigurationList = A56D219021B8A6E300B2FE53 /* Build configuration list for PBXNativeTarget "Grad_Vangapalli_Tejasree" */;
 			buildPhases = (
 				A56D217721B8A6E000B2FE53 /* Sources */,
 				A56D217821B8A6E000B2FE53 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = GradProjectFinal;
+			name = Grad_Vangapalli_Tejasree;
 			productName = GradProjectFinal;
-			productReference = A56D217B21B8A6E000B2FE53 /* GradProjectFinal.app */;
+			productReference = A56D217B21B8A6E000B2FE53 /* Grad_Vangapalli_Tejasree.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A56D217621B8A6E000B2FE53 /* Build configuration list for PBXProject "GradProjectFinal" */;
+			buildConfigurationList = A56D217621B8A6E000B2FE53 /* Build configuration list for PBXProject "Grad_Vangapalli_Tejasree" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A56D217A21B8A6E000B2FE53 /* GradProjectFinal */,
+				A56D217A21B8A6E000B2FE53 /* Grad_Vangapalli_Tejasree */,
 			);
 		};
 /* End PBXProject section */
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A56D217621B8A6E000B2FE53 /* Build configuration list for PBXProject "GradProjectFinal" */ = {
+		A56D217621B8A6E000B2FE53 /* Build configuration list for PBXProject "Grad_Vangapalli_Tejasree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56D218E21B8A6E300B2FE53 /* Debug */,
@@ -334,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A56D219021B8A6E300B2FE53 /* Build configuration list for PBXNativeTarget "GradProjectFinal" */ = {
+		A56D219021B8A6E300B2FE53 /* Build configuration list for PBXNativeTarget "Grad_Vangapalli_Tejasree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A56D219121B8A6E300B2FE53 /* Debug */,
