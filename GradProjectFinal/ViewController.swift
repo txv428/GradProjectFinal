@@ -4,7 +4,7 @@ import CoreML
 import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
+    // Declaration of variables and UI Objects.
     @IBOutlet weak var rustIMage: UIImageView!
     @IBOutlet var label: UILabel!
     let imagePicker = UIImagePickerController()
@@ -22,6 +22,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         analyzeImage(UIImage(named: randomImage!)!)
     }
     
+    // Analyzes image and classifies it
     func analyzeImage(_ uiImage: UIImage) {
         rustIMage.image = uiImage
         guard let ciImage = CIImage(image: uiImage) else {
@@ -34,6 +35,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    // Requests all the mlmodels for classification
     lazy var classificationRequest: VNCoreMLRequest = {
         do {
             let model = try VNCoreMLModel(for: ImageClassifier().model)
@@ -43,6 +45,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }()
     
+    // Classification and confidence results from VNClassificationObservation
     func handleClassification(request: VNRequest, error: Error?) {
         guard let observations = request.results as? [VNClassificationObservation]
             else { fatalError("Unexpected result type from VNCoreMLRequest") }
@@ -77,12 +80,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     // MARK - IBActions
-    
+    // Selects image from photo library
     @IBAction func tappedButton(_ sender: Any) {
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
     
+    // Selects image taken through camera
     @IBAction func takePhoto(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             imagePicker.sourceType = .camera
@@ -92,6 +96,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
+    // If camera is not available or testing in simulator
     private func showCameraNotAvailableAlert() {
         let alertController = UIAlertController.init(title: "Camera Not Available", message: nil, preferredStyle: .alert)
         alertController.addAction(UIAlertAction.init(title: "OK", style: .default, handler: nil))
@@ -99,7 +104,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     // MARK - UIImagePickerControllerDelegate
-    
+    // chooses image selected and analyzes it.
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             rustIMage.image = pickedImage
