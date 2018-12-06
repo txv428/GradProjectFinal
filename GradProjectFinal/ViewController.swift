@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  CoreML-Vision-Classification
-//
-//  Created by Adam McDonald on 6/13/17.
-//  Copyright © 2017 L4 Digital. All rights reserved.
-//
 
 import UIKit
 import CoreML
