@@ -19,24 +19,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.sourceType = .photoLibrary
         rustIMage.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         rustIMage.image = UIImage(named: randomImage!)
-        analyzeImage(UIImage(named: randomImage!)!)
+        analyzeTestImage(UIImage(named: randomImage!)!)
     }
     
     // Analyzes image and classifies it
-    func analyzeImage(_ uiImage: UIImage) {
-        rustIMage.image = uiImage
-        guard let ciImage = CIImage(image: uiImage) else {
+    func analyzeTestImage(_ testImage: UIImage) {
+        rustIMage.image = testImage
+        guard let ciImage = CIImage(image: testImage) else {
             fatalError("Can't create CIImage from UIImage")
         }
         
         DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated).async {
             let handler = VNImageRequestHandler(ciImage: ciImage)
-            try? handler.perform([self.classificationRequest])
+            try? handler.perform([self.mlmodelClassificationRequest])
         }
     }
     
     // Requests all the mlmodels for classification
-    lazy var classificationRequest: VNCoreMLRequest = {
+    lazy var mlmodelClassificationRequest: VNCoreMLRequest = {
         do {
             let model = try VNCoreMLModel(for: ImageClassifier().model)
             return VNCoreMLRequest(model: model, completionHandler: self.handleClassification)
@@ -108,7 +108,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
             rustIMage.image = pickedImage
-            analyzeImage(pickedImage)
+            analyzeTestImage(pickedImage)
         }
         
         dismiss(animated: true, completion: nil)
