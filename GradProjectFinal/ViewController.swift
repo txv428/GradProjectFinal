@@ -10,7 +10,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     let imagePicker = UIImagePickerController()
     var scale: Int = 0
     var scaleDescription: String = ""
-    var randomImage = ["1.png", "2.png", "3.png", "20.png", "26.png", "31.png", "34.png", "39.png", "40.png", "67.png", "68.png", "69.png", "70.png", "71.png", "72.png"].randomElement()
+    var randomImage = ["2.png", "3.png", "20.png", "26.png", "31.png", "34.png", "39.png", "40.png", "67.png", "68.png", "69.png", "70.png", "71.png", "72.png"].randomElement()
     
     override func viewDidLoad() {
         super.viewDidLoad()
