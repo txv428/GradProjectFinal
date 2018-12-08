@@ -25,7 +25,7 @@
 		A56D218821B8A6E300B2FE53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56D218B21B8A6E300B2FE53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A56D218D21B8A6E300B2FE53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = ImageClassifier.mlmodel; path = ../../../../Downloads/ImageClassifier.mlmodel; sourceTree = "<group>"; };
+		A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ImageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A520C47021BB47730027BE07 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
 		A56D217221B8A6E000B2FE53 = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +66,12 @@
 		A56D217D21B8A6E000B2FE53 /* GradProjectFinal */ = {
 			isa = PBXGroup;
 			children = (
+				A520C47021BB47730027BE07 /* ML Model */,
 				A56D217E21B8A6E000B2FE53 /* AppDelegate.swift */,
 				A56D218021B8A6E000B2FE53 /* ViewController.swift */,
 				A56D218221B8A6E000B2FE53 /* Main.storyboard */,
 				A56D218821B8A6E300B2FE53 /* Assets.xcassets */,
 				A56D218A21B8A6E300B2FE53 /* LaunchScreen.storyboard */,
-				A56D219321B8A73000B2FE53 /* ImageClassifier.mlmodel */,
 				A56D218D21B8A6E300B2FE53 /* Info.plist */,
 				A56D218521B8A6E000B2FE53 /* GradProjectFinal.xcdatamodeld */,
 			);
