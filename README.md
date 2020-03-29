@@ -1,2 +1,2 @@
 # GradProject Demo
-[Demo](https://drive.google.com/drive/u/0/folders/1C3qrk9osb8Vp6Kg2FD4DOM0nRZLtFC0w "Named link title")
+[Demo](https://drive.google.com/file/d/1CPiJSNNfxbBLg9RrS1kiTRWpqR02F6uj/view?usp=sharing)
